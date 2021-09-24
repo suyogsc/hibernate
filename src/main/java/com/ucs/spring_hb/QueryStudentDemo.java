@@ -20,6 +20,7 @@ public class QueryStudentDemo {
 		SessionFactory factory = meta.getSessionFactoryBuilder().build();
 		Session session = factory.openSession();
 		Transaction t = session.beginTransaction();
+		
 
 		// query Student
 		Student theStudent = session.get(Student.class, 1);
